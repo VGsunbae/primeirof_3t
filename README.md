@@ -1,2 +1,6 @@
-# primeirof_3t
-## Vitor Gabriel Ribeiro da Rocha 35
+# Terceiro Trimestre
+
+## Vitor Gabriel Ribeiro da Rocha - N°35
+
+## Conteúdo 
+HTML, CSS e javascript
