@@ -29,7 +29,9 @@ function mostraTabuada(){
 }
 
 }
-
+function moeda(merda){
+    return merda.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}
+}
 function total(){
     let v = document.getElementById("valor").value;
     let j = document.getElementById("juros").value;
@@ -42,7 +44,7 @@ function total(){
 
     }
     if (!Number(j)){
-        alert("O valor deve ser numérico");
+        alert("Os juros devem ser numéricos");
         document.getElementById("juros").value = "";
         document.getElementById("juros").focus();
         return
@@ -50,7 +52,7 @@ function total(){
     }
 
     if (!Number(t)){
-        alert("O valor deve ser numérico");
+        alert("Os meses devem ser numéricos");
         document.getElementById("meses").value = "";
         document.getElementById("meses").focus();
         return
