@@ -29,37 +29,50 @@ function mostraTabuada(){
 }
 
 }
+
 function total(){
     let v = document.getElementById("valor").value;
     let j = document.getElementById("juros").value;
     let t = document.getElementById("meses").value;
-    let r = 0;
-    for(let i =1; 1 <=t; i++){
-        r = v * (1 + (j/100));
-        document.write("Mês" + i + " - valor " + r + "<br>")
-        v = r;
+    if (!Number(v)){
+        alert("O valor deve ser numérico");
+        document.getElementById("valor").value = "";
+        document.getElementById("valor").focus();
+        return
 
     }
+    if (!Number(j)){
+        alert("O valor deve ser numérico");
+        document.getElementById("juros").value = "";
+        document.getElementById("juros").focus();
+        return
+
+    }
+
+    if (!Number(t)){
+        alert("O valor deve ser numérico");
+        document.getElementById("meses").value = "";
+        document.getElementById("meses").focus();
+        return
+
+    }
+    let r = 0;
+    for(let i =1; i <=t; i++){
+        r = v * (1 + (j/100));
+        document.write("mês " + i + " - valor: " + r + "<br>");
+        v = r;
+    }
    
-    document.write("Resultado: " + r);
+    document.write("Resultado: " + r );
 }
 
-function somaNota(){
-    let n1 = document.getElementById("b1").value;
-    let n2 = document.getElementById("b2").value;
-    let n3 = document.getElementById("b3").value;
-    let n4 = document.getElementById("b4").value;
 
-    let r = Number(n1)+Number(n2)+Number(n3)+Number(n4);
-    
+function nota(){
+  let n1 = document.getElementById("b1").value;
+  let n2 = document.getElementById("b2").value;
+  let n3 = document.getElementById("b3").value;
+  let n4 = document.getElementById("b4").value;
+  let r = Number(n1)+Number(n2)+Number(n3)+Number(n4);
 
-    document.getElementById("result").innerHTML = "Soma: " + r;
-
+  document.getElementById("resul").innerHTML = "Nota: " + r;
 }
-function Falta(){
-    let f = Number("r");
-
-    document.getElementById("f").innerHTML =  "Falta: " = f;
-
-
-} 
