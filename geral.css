@@ -1,1 +1,15 @@
+.calculadora {
+    background: lightgreen;
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+}
 
+.calculadora input {
+    background: lightseagreen;
+    color: lightskyblue;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
