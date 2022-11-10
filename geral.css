@@ -4,12 +4,20 @@
     padding: 10px;
     border-radius: 20px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px darkorchid;
 }
 .calculadora input{
-    background: rosybrown;
+    background:rosybrown;
     color: rgb(70, 63, 56);
     padding: 10px;
     border-radius: 20px;
+
+}
+.calculadora input:focus{
+    background: red;
+    color: orange;
 }
 #spTotal{
     background: black;
