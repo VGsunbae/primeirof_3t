@@ -30,7 +30,7 @@ function mostraTabuada(){
 
 }
 function moeda(merda){
-    return merda.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}
+    return merda.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 }
 function total(){
     let v = document.getElementById("valor").value;
